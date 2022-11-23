@@ -26,6 +26,11 @@ body {
     align-items: center;
     margin-bottom: 8px;
 }
+.title .title-lightbar {
+    background-color: #41F6D7;
+    height: 40px;
+    width: 4px
+}
 .nav>ul {
     display: flex;
 }
@@ -43,6 +48,13 @@ body {
     align-items: center;
     margin-right: 30px;
     margin-left: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 0.8);
+    transition: .3s;
+}
+.nav__link:hover {
+    color: black;
 }
 .nav>ul li:last-child .nav__link {
     margin-right: 0;
@@ -82,15 +94,22 @@ p {
 .content__more {
     border: none;
     background-color: #F8F8F8;
-    font-weight: bold;
+    font-weight: 600;
+    color: #7E7E82;
     font-size: 16px;
+    transition: .5s;
+    cursor: pointer;
+}
+.content__more:hover {
+    color: black;
+    border-radius: 6px;
 }
 .content__more>object {
     margin-right: 16px;
 }
 .content__logo-image {
-    max-width: 531.35px;
-    max-height: 383.24px;
+    max-width: 531px;
+    max-height: 383px;
     width: 100%;
     height: 100%;
     border-radius: 6px;
