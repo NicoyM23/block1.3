@@ -135,7 +135,6 @@ p {
 }
 @media screen and (max-width: 1120px) {
     body {
-        background-color: green;
     }
     .header {
         display:block;
