@@ -26,10 +26,20 @@ body {
     align-items: center;
     margin-bottom: 8px;
 }
-.title .title-lightbar {
+.title {
+    position: relative;
+    display: block;
+}
+.title.title-lightbar:after {
+    left: -32px;
+    top: 7px;
+    content: "";
+    position: absolute;
     background-color: #41F6D7;
     height: 40px;
-    width: 4px
+    width: 4px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
 }
 .nav>ul {
     display: flex;
@@ -113,4 +123,94 @@ p {
     width: 100%;
     height: 100%;
     border-radius: 6px;
+}
+
+.header {
+    display: none;
+}
+.title__portable {
+    display: none;
+}
+.header__nav__link {
+    align-items: center;
+}
+@media screen and (max-width: 1120px) {
+    body {
+        background-color: green;
+    }
+    .header {
+        display:block;
+    }
+    .header-mini {
+        display: none;
+    }
+    .title__portable {
+        display: block;
+    }
+}
+@media screen and (max-width: 320px) {
+    .container {
+        padding: 0;
+    }
+    .header {
+        background-color: #FFFFFF;
+        padding: 20px 16px;
+    }
+    .header>ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__nav__link__logo {
+        width: 96px;
+        height: 50px;
+    }
+    .header__nav__link__divider {
+        width: 2px;
+        height: 32px;
+    }
+    .header-mini {
+        display: none;
+    }
+    .title__portable {
+        position: relative;
+        display: block;
+        margin-left: 12px;
+    }
+    .title__portable.title-lightbar:before {
+        top: 10px;
+        left: -12px;
+        content: "";
+        position: absolute;
+        background-color: #41F6D7;
+        height: 40px;
+        width: 4px;
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+    .tabs {
+        margin: 20px 16px;
+    }
+    .content__description {
+        margin-left: 16px;
+        margin-right: 16px;
+        width: auto;
+    }
+    .description__320px {
+        display: none;
+    }
+    p {
+        font-size: 14px;
+    }
+    .content__more {
+        margin: 10px;
+    }
+    .content__more>object {
+        margin-right: 16px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
 }
