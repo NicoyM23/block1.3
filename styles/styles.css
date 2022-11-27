@@ -194,7 +194,7 @@ p {
         margin-right: 16px;
         width: auto;
     }
-    .description__320px {
+    .content__description p:last-of-type {
         display: none;
     }
     p {
