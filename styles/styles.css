@@ -153,6 +153,8 @@ p {
     .header {
         background-color: #FFFFFF;
         padding: 20px 16px;
+        display: flex;
+        justify-content: space-between;
     }
     .header>ul {
         display: flex;
@@ -167,15 +169,21 @@ p {
         width: 2px;
         height: 32px;
     }
+    .header>a {
+
+    }
+    .header>ul>li {
+        margin-left: 16px;
+    }
     .header-mini {
         display: none;
     }
-    .title__portable {
+    .title-portable {
         position: relative;
         display: block;
         margin-left: 12px;
     }
-    .title__portable.title-lightbar:before {
+    .title-portable.title-lightbar:before {
         top: 10px;
         left: -12px;
         content: "";
